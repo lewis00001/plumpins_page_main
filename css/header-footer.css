@@ -54,6 +54,7 @@ a:visited {
     width: 100px;
     height: 97px;
     padding-top: 5px;
+    filter: drop-shadow(2px 2px 2px #000);
 }
 
 .h-nav {
