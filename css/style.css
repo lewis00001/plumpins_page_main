@@ -7,9 +7,152 @@ body {
 }
 
 main {
-    width: 1100px;
+    max-width: 1100px;
     min-height: 100%;
     margin: auto;
     background-color: #444;
     box-shadow: 2px 1px 2px #000, -2px 1px 2px #000;
+    padding: 10px;
 }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.intro {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 10px auto 18px auto;
+    max-width: 90%;
+}
+
+.selection-div {
+    background-color: #333;
+    width: 500px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.pipe-hamster {
+    padding: 0px 5px 0px 5px;
+    width: 110px;
+    position: relative;
+}
+
+.pipe {
+    height: 200px;
+    width: 110px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+    position: relative;
+}
+
+.pipe > img {
+    width: 100px;
+    height: 100px;
+}
+
+.hamster {
+    position: absolute;
+    border: 1px solid red;
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    left: 12px;
+}
+
+.border {
+    border: 2px solid red !important;
+}
+
+.over {
+    animation-name: in;
+    animation-duration: 400ms;
+}
+.out {
+    animation-name: out;
+    animation-duration: 200ms;
+}
+
+@keyframes in {
+    from {
+        top: 100px;
+    }
+    to {
+        top: 30px;
+    }
+}
+@keyframes out {
+    from {
+        top: 30px;
+    }
+    to {
+        top: 100px;
+    }
+}
+
+.hamster>img {
+    position: absolute;
+    top: 0px;
+    width: 82px;
+    z-index: 1;
+}
+
+.selection-content {
+    background-color: #444;
+    height: 190px;
+    width: 965px;
+    margin: 5px 5px 5px 0;
+}
+
+.selection-heading {
+    height: 100%;
+    background-color: #444;
+    display: flex;
+    flex-direction: row;
+}
+
+.sel-button {
+    background-color: #333;
+    border-radius: 20%;
+    height: 80px;
+    min-width: 80px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.sel-button > img {
+    width: 60px;
+    margin: 9px 10px 10px 9px;
+}
+
+.sel-button:hover {
+    border: 2px solid white;
+}
+
+.sel-title {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.sel-text {
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.3em;
+}
+

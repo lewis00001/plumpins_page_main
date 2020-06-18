@@ -25,7 +25,7 @@ a:visited {
 
 .h-content,
 .f-content {
-    width: 1100px;
+    max-width: 1100px;
     height: 100%;
     margin: auto;
     display: flex;
@@ -40,6 +40,10 @@ a:visited {
 .logo {
     display: flex;
     flex-direction: row;
+}
+
+.logo>a>img:hover {
+    transform: rotate(-10deg);
 }
 
 .h-text {
