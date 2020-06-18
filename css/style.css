@@ -61,20 +61,16 @@ section {
 
 .hamster {
     position: absolute;
-    border: 1px solid red;
     width: 30px;
     height: 30px;
-    top: 100px;
+    top: 105px;
     left: 12px;
-}
-
-.border {
-    border: 2px solid red !important;
 }
 
 .over {
     animation-name: in;
     animation-duration: 400ms;
+    animation-fill-mode: forwards;
 }
 .out {
     animation-name: out;
@@ -83,18 +79,18 @@ section {
 
 @keyframes in {
     from {
-        top: 100px;
+        top: 0px;
     }
     to {
-        top: 30px;
+        top: -75px;
     }
 }
 @keyframes out {
     from {
-        top: 30px;
+        top: -75px;
     }
     to {
-        top: 100px;
+        top: 0px;
     }
 }
 
