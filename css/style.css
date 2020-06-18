@@ -74,7 +74,7 @@ section {
 }
 .out {
     animation-name: out;
-    animation-duration: 200ms;
+    animation-duration: 150ms;
 }
 
 @keyframes in {
