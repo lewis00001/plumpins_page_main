@@ -142,7 +142,7 @@ section {
 }
 
 .sel-text {
-    margin: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
     padding: 10px;
     background-color: #333;
     font-family: 'Roboto', sans-serif;
@@ -150,5 +150,14 @@ section {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.3em;
+}
+
+.data {
+    margin-top: 30px;
+    padding: 0 15px 15px 15px;
+}
+
+.data-h {
+    margin: 15px 0 8px 0;
 }
 

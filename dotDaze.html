@@ -1,36 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image/png" href="images/fav-logo.png"/>
+    <link rel="icon" type="image/png" href="images/fav-logo.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dot Daze</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dot-style.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7498e3ea8f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="h-content">
             <div class="logo">
                 <a href="index.html">
                     <img src="./images/p-logo.png" alt="plumpin logo">
-                </a> 
+                </a>
                 <div class="h-text">Plumpin's Page</div>
             </div>
             <div class="h-nav">
-                <a href="index.html"><div class="link link-border-right">Home</div></a> 
-                <a href="dotDaze.html"><div class="link link-border-right link-active">Dot Daze</div></a> 
-                <a href="memoryMix.html"><div class="link link-border-right">Memory Mix</div></a> 
-                <a href="postPass.html"><div class="link">Post Pass</div></a> 
+                <a href="index.html">
+                    <div class="link link-border-right">Home</div>
+                </a>
+                <a href="dotDaze.html">
+                    <div class="link link-border-right link-active">Dot Daze</div>
+                </a>
+                <a href="memoryMix.html">
+                    <div class="link link-border-right">Memory Mix</div>
+                </a>
+                <a href="postPass.html">
+                    <div class="link">Post Pass</div>
+                </a>
             </div>
         </div>
     </header>
 
     <main>
-        content
+
+        <div class="intro">
+            <p>
+                Hi, I'm Plumpin the hamster and this is my page. I've added some wonderful content for
+                you to enjoy. Please click on the links below to check things out. I hope you have a
+                wonderful day!
+            </p>
+        </div>
+
+        <section class="dot-game-area">
+            <div class="inner-sec-1">
+                <div class="options">
+                    <h2 class="options-h">Color Selections</h2>
+                    <div class="glow-white" id="active-color"></div>
+                    <div class="color-selection-grid">
+                        <div class="csg-column-1">
+                            <div class="color-options off border" value="glow-off"></div>
+                            <div class="color-options pink" value="glow-pink"></div>
+                            <div class="color-options l_green" value="glow-l_green"></div>
+                        </div>
+                        <div class="csg-column-2">
+                            <div class="color-options black" value="glow-black"></div>
+                            <div class="color-options red" value="glow-red"></div>
+                            <div class="color-options green" value="glow-green"></div>
+                        </div>
+                        <div class="csg-column-3">
+                            <div class="color-options gray_1" value="glow-gray_1"></div>
+                            <div class="color-options blue" value="glow-blue"></div>
+                            <div class="color-options orange" value="glow-orange"></div>
+                        </div>
+                        <div class="csg-column-4">
+                            <div class="color-options gray_2" value="glow-gray_2"></div>
+                            <div class="color-options purple" value="glow-purple"></div>
+                            <div class="color-options yellow" value="glow-yellow"></div>
+                        </div>
+                        <div class="csg-column-5">
+                            <div class="color-options white" value="glow-white"></div>
+                        </div>
+                    </div>
+
+                    <h2 class="options-h">Glow</h2>
+                    <div class="grid-toggle">
+                        <div class="toggle-glow t-glow-on toggle-active">On</div>
+                        <div class="toggle-glow t-glow-off">Off</div>
+                    </div>
+
+                    <h2 class="options-h">Grid Style</h2>
+                    <div class="grid-toggle">
+                        <div class="toggle-shape t-circle toggle-active">Circle</div>
+                        <div class="toggle-shape t-square">Square</div>
+                    </div>
+
+                    <h2 class="options-h">Grid BG Color</h2>
+                    <div class="grid-toggle">
+                        <div class="bg-select bg-blue" value="bg-blue"></div>
+                        <div class="bg-select bg-l_gray" value="bg-l_gray"></div>
+                        <div class="bg-select bg-gray" value="bg-gray"></div>
+                        <div class="bg-select bg-black" value="bg-black"></div>
+                        <div class="bg-select bg-white" value="bg-white"></div>
+                    </div>
+
+                    <h2 class="options-h">Start Image</h2>
+                    <div class="start-img" id="tree" value="tree">Tree</div>
+                </div>
+            </div>
+
+            <div class="inner-sec-2">
+                <div id="dot-output"></div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="sel-text data">
+                <div class="sel-title data-h">Doodling for Stress Relief</div>
+                <p>
+                    "Spontaneous drawings may also relieve psychological distress, making it easier to attend
+                    to things. We like to make sense of our lives by making up coherent stories, but sometimes
+                    there are gaps that cannot be filled, no matter how hard we try. Doodles fill these gaps,
+                    possibly by activating the brain’s “time travel machine,” allowing it to find lost puzzle
+                    pieces of memories, bringing them to the present, and making the picture of our lives more
+                    whole again. With this greater sense of self and meaning, we may be able to feel more
+                    relaxed and concentrate more."
+                    <br>
+                    https://www.health.harvard.edu/blog/the-thinking-benefits-of-doodling-2016121510844
+                </p>
+                <div class="sel-title data-h">Doodling Helps Concentration</div>
+                <p>
+                    "It seems then that if you’re struggling to concentrate, find yourself stuck or feeling
+                    'incomplete,'' a time-limited doodle expedition could be just the thing you are looking for.
+                    It will likely activate your brain’s 'unfocus' circuits, give your 'focus' circuits a break,
+                    and allow you to more creatively and tirelessly solve a problem at hand. The Creative Arts
+                    Therapy Department in the College of Nursing and Health Professions here at Drexel, recently
+                    conducted a study to look at the biological effects of doodling. Their findings were recently
+                    published in The Arts in Psychotherapy. They found doodling boosts blood flow in the frontal
+                    cortex of the brain. This effect enhances mood. In other words, doodlers experience the
+                    psychological benefit of pleasure or well-being. Their study further found that 75% of those
+                    who participated in making art (even those who are not terribly creative), reduced their
+                    cortisol levels, aka the stress hormone, in the brain."
+                    <br>
+                    https://drexel.edu/goodwin/professional-studies-blog/overview/2017/June/Doodling/
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -52,5 +167,10 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="./js/dot-app.js"></script>
+    <script src="js/tree.js"></script>
+
 </body>
+
 </html>
