@@ -22,6 +22,35 @@
     border: 2px solid white;
 }
 
+.memory-sel-button-current {
+    background-color: #333;
+    border-radius: 20%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid #dddd64;
+    text-align: center;
+    color: white;
+    padding-top: 9px;
+    font-size: 28px;
+}
+
+.memory-sel-button-complete {
+    background-color: #9370d8; 
+    border-radius: 20%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border: 3px solid #dddd64;
+    text-align: center;
+    color: white;
+    padding-top: 9px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
 .flex-div {
     display: flex;
     flex-direction: row;
@@ -35,7 +64,7 @@
 
 .s-card {
     width: 100%;
-    margin: 15px 0 15px 0;
+    margin: 10px 0 15px 0;
 }
 
 .score-card {
@@ -81,6 +110,53 @@
     margin-bottom: 3px;
 }
 
+.game-box {
+    display: block;
+    background-color: #333;
+    width: 200px;
+    height: 200px;
+}
+
+.memory-game-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+    background-color: #333;
+    min-width: 700px;
+    padding: 25px 15px 20px 10px;
+}
+
+.memory-options {
+    width: 200px;
+}
+
+.game-tools {
+    background-color: #444;
+    width: 200px;
+    height: 80px;
+}
+
+.mem-color-selection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    max-width: 100px;
+    margin: auto;
+}
+
+.mem-button {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #444;
+    width: 200px;
+    padding: 8px;
+    margin: 20px auto 5px auto;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
 #score-s {
     font-size: 34px;
     color: #dddd64;
@@ -92,4 +168,32 @@
 
 #peek-points {
     color: #f08080;
+}
+
+#mem-active-color {
+    position:relative;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin: 18px auto 15px auto;
+}
+
+#mem-active-color::after {
+    content:"";
+    border-style: solid;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #444 transparent transparent;
+    position: absolute;
+    left: 40px;
+    top: 2px;
+}
+
+#mem-active-color::before {
+    content:"";
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent  transparent transparent #444;
+    position: absolute;
+    left: -30px;
+    top: 2px;
 }
