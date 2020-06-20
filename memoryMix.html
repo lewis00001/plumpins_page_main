@@ -8,6 +8,8 @@
     <title>Memory Mix</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dot-style.css">
+    <link rel="stylesheet" href="css/memory-style.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap"
         rel="stylesheet">
@@ -42,36 +44,89 @@
 
     <main>
 
-        <section></section>
+        <div class="intro">
+            <p>
+                Hi, I'm Plumpin the hamster and this is my page. I've added some wonderful content for
+                you to enjoy. Please click on the links below to check things out. I hope you have a
+                wonderful day!
+            </p>
+        </div>
+
+        <section>
+
+            <div class="challenges">
+                <h2 class="sel-title center-text">Challanges</h2>
+                <div class="challenge-div">
+                    <div class="flex-div">
+                        <div class="memory-sel-button">1</div>
+                        <div class="memory-sel-button">2</div>
+                        <div class="memory-sel-button">3</div>
+                        <div class="memory-sel-button">4</div>
+                        <div class="memory-sel-button">5</div>
+                    </div>
+                    <div class="flex-div">
+                        <div class="memory-sel-button">6</div>
+                        <div class="memory-sel-button">7</div>
+                        <div class="memory-sel-button">8</div>
+                        <div class="memory-sel-button">9</div>
+                        <div class="memory-sel-button">10</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s-card">
+                <div class="score-card">
+
+                    <div class="score">
+                        <div class="p-points score-h">Total Score</div>
+                        <div id="score-s">1000</div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="points-add">
+                            <div class="p-points">Points: </div>
+                            <div class="p-points" id="total-points">500</div>
+                        </div>
+                        <div class="points-sub">
+                            <div class="p-points">Peeks: </div>
+                            <div class="p-points" id="peek-points">200</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
 
         <section>
             <div class="sel-text data">
                 <div class="sel-title data-h">The Brain at its Best</div>
                 <p>
-                    "Memory games are considered as one of the primary methods for ensuring that our brains 
-                    are working at their best. These games have become a subject of great interest to people 
-                    because they are founded on sound science. Memory games are also very important for mental 
-                    health and well being, neuroscientists have shown that regular brain fitness training can 
-                    provide considerable benefits to people with cognitive decline. The lesson here is that 
-                    the earlier you begin engaging in Memory games aimed at exercising your brain the longer 
-                    you will retain your brain fitness. Therefore the importance of engaging in games aimed at 
-                    testing and keeping your mind fit cannot be gainsaid and it is beneficial for you to consider 
+                    "Memory games are considered as one of the primary methods for ensuring that our brains
+                    are working at their best. These games have become a subject of great interest to people
+                    because they are founded on sound science. Memory games are also very important for mental
+                    health and well being, neuroscientists have shown that regular brain fitness training can
+                    provide considerable benefits to people with cognitive decline. The lesson here is that
+                    the earlier you begin engaging in Memory games aimed at exercising your brain the longer
+                    you will retain your brain fitness. Therefore the importance of engaging in games aimed at
+                    testing and keeping your mind fit cannot be gainsaid and it is beneficial for you to consider
                     such games early on in life."
                     <br>
                     https://sites.google.com/site/memoryproblems01/the-importance-of-memory-games
                 </p>
                 <div class="sel-title data-h">Aging Well</div>
                 <p>
-                    "Memory loss is a natural process that all people may go through as we age and it may prove 
-                    to be a little difficult to prevent and it cannot be halted. However, it can be slowed down 
-                    by properly exercising your brain and this can be done by playing memory games. When you play 
-                    these games and exercise your brain consistently, you will be able to avoid illnesses and 
-                    diseases which are memory-related. This is primarily because the brain is kept active often. 
-                    When a person plays memory and brain-enhancing games regularly, he or she will not only be 
-                    able to enhance the brain’s memory function, but also other brain skills like concentration, 
-                    focus, attention level, cognitive skills as well as reading and reasoning skills. This is 
-                    because many memory games are developed to allow the brain to think strategically and 
-                    critically. There are many memory games that have various levels of difficulties to 
+                    "Memory loss is a natural process that all people may go through as we age and it may prove
+                    to be a little difficult to prevent and it cannot be halted. However, it can be slowed down
+                    by properly exercising your brain and this can be done by playing memory games. When you play
+                    these games and exercise your brain consistently, you will be able to avoid illnesses and
+                    diseases which are memory-related. This is primarily because the brain is kept active often.
+                    When a person plays memory and brain-enhancing games regularly, he or she will not only be
+                    able to enhance the brain’s memory function, but also other brain skills like concentration,
+                    focus, attention level, cognitive skills as well as reading and reasoning skills. This is
+                    because many memory games are developed to allow the brain to think strategically and
+                    critically. There are many memory games that have various levels of difficulties to
                     holistically train and boost the brain"
                     <br>
                     https://socialworkprocesses.co.uk/3-benefits-playing-memory-games/
@@ -98,6 +153,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="./js/memory-app.js"></script>
 
 </body>
 

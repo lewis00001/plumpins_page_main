@@ -1,0 +1,95 @@
+.challenge-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.memory-sel-button {
+    background-color: #333;
+    border-radius: 20%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    text-align: center;
+    color: var(--gen-text-color);
+    padding-top: 9px;
+    font-size: 28px;
+}
+
+.memory-sel-button:hover {
+    border: 2px solid white;
+}
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    margin: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.s-card {
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
+
+.score-card {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    height: 75px;
+}
+
+.score {
+    background-color: #333;
+    border-radius: 15px;
+    border: 2px solid white;
+    height: 75px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.stats {
+    background-color: #333;
+    border-radius: 12px;
+    border: 1px solid white;
+    height: 50px;
+    width: 350px;
+    position: absolute;
+    top: 12.5px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 25px 0 25px;
+}
+
+.p-points {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 3px;
+}
+
+#score-s {
+    font-size: 34px;
+    color: #dddd64;
+}
+
+#total-points {
+    color: #9370d8;
+}
+
+#peek-points {
+    color: #f08080;
+}
