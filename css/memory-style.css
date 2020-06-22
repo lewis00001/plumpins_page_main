@@ -58,10 +58,6 @@
     margin: auto;
 }
 
-.center-text {
-    text-align: center;
-}
-
 .s-card {
     width: 100%;
     margin: 10px 0 15px 0;
@@ -155,6 +151,12 @@
     text-align: center;
     cursor: pointer;
     letter-spacing: 1.5px;
+}
+
+.mem-button:hover {
+    background-color: #222;
+    color: #dddd64;
+    cursor: pointer;
 }
 
 #score-s {

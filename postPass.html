@@ -7,6 +7,7 @@
     <title>Post Pass</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/header-footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7498e3ea8f.js" crossorigin="anonymous"></script>
@@ -21,16 +22,43 @@
                 <div class="h-text">Plumpin's Page</div>
             </div>
             <div class="h-nav">
-                <a href="index.html"><div class="link link-border-right">Home</div></a> 
-                <a href="dotDaze.html"><div class="link link-border-right">Dot Daze</div></a> 
-                <a href="memoryMix.html"><div class="link link-border-right">Memory Mix</div></a> 
-                <a href="postPass.html"><div class="link link-active">Post Pass</div></a>
+                <a href="#"><div class="link link-border-right">Home</div></a> 
+                <a href="#"><div class="link link-border-right">Dot Daze</div></a> 
+                <a href="#"><div class="link link-border-right">Memory Mix</div></a> 
+                <a href="#"><div class="link link-active">Post Pass</div></a>
             </div>
         </div>
     </header>
 
     <main>
-        content
+
+        <div class="intro">
+            <p>
+                Hi, I'm Plumpin the hamster and this is my page. I've added some wonderful content for
+                you to enjoy. Please click on the links below to check things out. I hope you have a
+                wonderful day!
+            </p>
+        </div>
+
+        <div class="t-content">
+            <h2 class="sel-title center-text">Contact Us</h2>
+
+            <div class="contact-us-form">
+                <div class="email-icon">
+                    <img src="images/email-icon-pp.png" alt="email icon">
+                </div>
+                <div id="feedback"></div>
+                <div>
+                    <form action="js/simSubmission.js">
+                        <label for="name" class="options-f">Name:</label>
+                        <input type="text" id="name" class="entry" placeholder="your name">
+                        <label for="email" class="options-f">Email:</label>
+                        <input type="text" id="email" class="entry" placeholder="your email">
+                        <label for="eBody" class="options-f">Message:</label>   
+                        <textarea name="eBody" id="eBody" class="entry" cols="30" rows="10" placeholder="your message ..."></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
     </main>
 
     <footer>
@@ -51,6 +79,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/simSubmission.js"></script>
 
 </body>
 </html>
