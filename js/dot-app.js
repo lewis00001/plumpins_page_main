@@ -79,4 +79,9 @@ $(document).ready(function () {
         $('#dot-output').addClass(bg);
     });
 
+    // reloads page to clear screen
+    $('#reset').on('click', function() {
+        location.reload();
+    });
+
 });

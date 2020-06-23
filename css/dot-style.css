@@ -46,6 +46,21 @@ span {
     cursor: pointer;
 }
 
+.reset-all {
+    padding: 4px;
+    margin-top: 12px;
+    color: var(--gen-text-color);
+    cursor: pointer;
+    background-color: #444;
+    font-family: var(--b-font);
+    text-align: center;
+}
+
+.reset-all:hover {
+    background-color: #9370d8;
+    color: #222;
+}
+
 .dot-game-area {
     background-color: #333;
     min-width: 1000px;
