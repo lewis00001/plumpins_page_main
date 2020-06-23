@@ -17,7 +17,7 @@ textarea {
 
 button {
     color: white;
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--h-font);
     background-color: #555;
     width: 125px;
     padding: 8px;
@@ -36,7 +36,7 @@ button:hover {
 }
 
 .options-f {
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--h-font);
     color: white;
     font-size: 20px;
     margin-top: 10px;
@@ -63,7 +63,7 @@ button:hover {
 
 #feedback {
     display: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--b-font);
     margin: 10px 0 15px 0;
     text-align: center;
 }

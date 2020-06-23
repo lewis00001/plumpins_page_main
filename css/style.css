@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --h-font: 'Architects Daughter', cursive;
+    --b-font: 'Roboto', sans-serif;
+}
+
 body {
     background-color: #888;
 }
@@ -27,7 +32,7 @@ section {
 
 .intro {
     color: white;
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--h-font);
     font-size: 18px;
     line-height: 1.4em;
     margin: 10px auto 24px auto;
@@ -139,7 +144,7 @@ section {
 }
 
 .sel-title {
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--h-font);
     font-size: 24px;
     color: white;
     margin-bottom: 8px;
@@ -149,7 +154,7 @@ section {
     margin: 10px 0 10px 0;
     padding: 10px;
     background-color: #333;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--b-font);
     color: #999;
     font-size: 14px;
     letter-spacing: 0.02em;

@@ -8,10 +8,12 @@
     --green: green;
     --l_green: lightgreen;
     --blue: #99ccff;
+    --d-blue: #2f6090;
     --orange: #f08080;
     --yellow: #dddd64;
     --purple: #9370d8;
     --red: firebrick; 
+    --brown: #836320;
 }
 
 a {
@@ -77,7 +79,7 @@ span {
 }
 
 .options-h {
-    font-family: 'Architects Daughter', cursive;
+    font-family: var(--h-font);
     color: var(--gen-text-color);
     font-size: 20px;
     margin-bottom: -3px;
@@ -163,8 +165,18 @@ span {
     background-color: rgb(240, 240, 255);
 }
 
+.glow-d-blue {
+    box-shadow: 0 0 8px #fff, 0 0 24px var(--d-blue);
+    background-color: rgb(240, 240, 255);
+}
+
 .glow-orange {
     box-shadow: 0 0 8px #fff, 0 0 24px var(--orange);
+    background-color: rgb(240, 240, 255);
+}
+
+.glow-brown {
+    box-shadow: 0 0 8px #fff, 0 0 24px var(--brown);
     background-color: rgb(240, 240, 255);
 }
 
@@ -206,13 +218,14 @@ span {
 
 .pink {
     cursor: pointer;
-    background-color: hotpink;
+    background-color: var(--pink);
 }
 
 .green {
     cursor: pointer;
     background-color: var(--green);
 }
+
 .l_green {
     cursor: pointer;
     background-color: var(--l_green);
@@ -220,12 +233,22 @@ span {
 
 .blue {
     cursor: pointer;
-    background-color: #99ccff;
+    background-color: var(--blue);
+}
+
+.d-blue {
+    cursor: pointer;
+    background-color: var(--d-blue);
 }
 
 .orange {
     cursor: pointer;
-    background-color: lightcoral;
+    background-color: var(--orange);
+}
+
+.brown {
+    cursor: pointer;
+    background-color: var(--brown);
 }
 
 .yellow {
@@ -258,7 +281,7 @@ span {
     margin: 10px auto 0 auto;
     display: flex;
     justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--b-font);
 }
 
 .toggle-shape, .toggle-glow {
@@ -280,7 +303,7 @@ span {
     color: var(--gen-text-color);
     cursor: pointer;
     background-color: #222;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--b-font);
 }
 
 .bg-black {
