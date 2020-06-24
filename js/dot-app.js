@@ -6,10 +6,6 @@ $(document).ready(function () {
     let dotShape = "circ";
     let glow = true;
 
-    // reloads the html page
-    $('#clear').on('click', function () {
-        location.reload();
-    });
     // generates all the dots on the screen
     for (let i = 0; i < numDots; i++) {
         $("#dot-output").append("<div class='dot circ glow-off' id='" + i + "'></div>");
