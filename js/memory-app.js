@@ -27,6 +27,19 @@ $(document).ready(function () {
 
     let memActiveColor = "white";
 
+    // compares arrays and returns a bool
+    function match(arr1, arr2) {
+        let isMatch = true;
+        for (let i = 0; i < 16; i++) {
+            if (loadedPuzzleValues[i] != userPuzzleValues[i]) {
+                isMatch = false;
+                break;
+            }
+        }
+        console.log(isMatch);
+        return isMatch;
+    } 
+
     // records color selection
     $('.color-options').on('click', function () {
         memActiveColor = $(this).attr('value');
@@ -49,6 +62,7 @@ $(document).ready(function () {
             userPuzzleValues.push(userEntry);
         }
         console.log('userEntry: ' + userPuzzleValues);
+        match(loadedPuzzleValues, userPuzzleValues);
     });
 
     // loads the selected puzzle
@@ -61,7 +75,7 @@ $(document).ready(function () {
             let num = findColorNum(puzzle[level][i]);
             loadedPuzzleValues.push(num);
         };
-        console.log("puzzle: " + loadedPuzzleValues);
+        console.log("sysPuzzle: " + loadedPuzzleValues);
     });
 
 });
