@@ -24,7 +24,6 @@ $(document).ready(function () {
 
     let loadedPuzzleValues = [];
     let userPuzzleValues = [];
-
     let memActiveColor = "white";
 
     // compares arrays and returns a bool
@@ -62,7 +61,7 @@ $(document).ready(function () {
             userPuzzleValues.push(userEntry);
         }
         console.log('userEntry: ' + userPuzzleValues);
-        match(loadedPuzzleValues, userPuzzleValues);
+        $('.info-output').text( match(loadedPuzzleValues, userPuzzleValues) );
     });
 
     // loads the selected puzzle
