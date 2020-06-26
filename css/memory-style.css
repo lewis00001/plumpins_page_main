@@ -166,7 +166,25 @@
     text-align: center;
 }
 
-#score-s {
+.error {
+    color: var(--orange);
+    font-weight: 800;
+}
+
+.confirm {
+    color: var(--green);
+    font-weight: 800;
+}
+
+.display-off {
+    display: none;
+}
+
+.box-block {
+    min-height: 200px;
+}
+
+#score-sum {
     font-size: 34px;
     color: #dddd64;
 }
