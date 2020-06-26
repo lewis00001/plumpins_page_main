@@ -184,6 +184,10 @@
     min-height: 200px;
 }
 
+.non-click {
+    pointer-events: none;
+}
+
 #score-sum {
     font-size: 34px;
     color: #dddd64;
