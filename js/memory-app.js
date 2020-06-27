@@ -165,6 +165,8 @@ $(document).ready(function () {
             updateTotalScore();
             $('#load-puzzle').removeClass('display-off');
             $(currentPuzzleId).removeClass('memory-sel-button-current').addClass('memory-sel-button-complete');
+            $('#submit').addClass('non-click');
+            $('#peek').addClass('non-click');
         } else {
             $('.info-output').text('Oops, try again').addClass('error');
             setTimeout(function () {
@@ -197,6 +199,8 @@ $(document).ready(function () {
             let num = findColorNum(puzzle[level][i]);
             loadedPuzzleValues.push(num);
         };
+        $('#submit').removeClass('non-click');
+        $('#peek').removeClass('non-click');
         console.log("sysPuzzle: " + loadedPuzzleValues);
         peekCountDown(5);
     });
