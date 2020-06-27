@@ -4,8 +4,9 @@
     flex-wrap: wrap;
 }
 
-.memory-sel-button {
-    background-color: #333;
+.memory-sel-button,
+.memory-sel-button-current,
+.memory-sel-button-complete {
     border-radius: 20%;
     height: 50px;
     width: 50px;
@@ -18,36 +19,26 @@
     font-size: 28px;
 }
 
+.memory-sel-button {
+    background-color: #333;
+    border: 1px solid white;
+    color: var(--gen-text-color);
+}
+
 .memory-sel-button:hover {
     border: 2px solid white;
 }
 
 .memory-sel-button-current {
     background-color: #333;
-    border-radius: 20%;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    cursor: pointer;
     border: 3px solid #dddd64;
-    text-align: center;
     color: white;
-    padding-top: 9px;
-    font-size: 28px;
 }
 
 .memory-sel-button-complete {
     background-color: #9370d8; 
-    border-radius: 20%;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    cursor: pointer;
     border: 3px solid #dddd64;
-    text-align: center;
     color: white;
-    padding-top: 9px;
-    font-size: 28px;
     font-weight: 700;
 }
 
@@ -209,22 +200,22 @@
     margin: 18px auto 15px auto;
 }
 
+#mem-active-color::before,
 #mem-active-color::after {
     content:"";
     border-style: solid;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent #444 transparent transparent;
     position: absolute;
-    left: 40px;
     top: 2px;
 }
 
+#mem-active-color::after {
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #444 transparent transparent;
+    left: 40px;
+}
+
 #mem-active-color::before {
-    content:"";
-    border-style: solid;
     border-width: 10px 0 10px 15px;
     border-color: transparent  transparent transparent #444;
-    position: absolute;
     left: -30px;
-    top: 2px;
 }
