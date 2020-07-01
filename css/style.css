@@ -134,7 +134,7 @@ section {
     border: 1px solid white;
 }
 
-.sel-button > img {
+.sel-button > a > img {
     width: 60px;
     margin: 9px 10px 10px 9px;
 }
